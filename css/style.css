@@ -135,11 +135,20 @@ body {
     color: var(--white);
     background-color: var(--clr-primary);
     box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
+    transition: ease   .5s;
+}
+.button:hover{
+    transform: scale(1.03);
+    border: 1px solid var(--clr-primary);
+    background: var(--white);
 }
 
 .button .btn-link {
     color: var(--white);
     text-decoration: none;
+}
+.button .btn-link:hover{
+    color: var(--clr-primary);
 }
 
 .card-img {
@@ -196,6 +205,13 @@ header .navbar {
     transition: .5s ease-out;
 
 }
+.nav-btn{
+    background: var(--clr-primary);
+    color: var(--white) !important;
+    padding: 8px 16px;
+
+}
+
 
 header .navbar .hamburger-icon {
     display: none;
@@ -285,6 +301,7 @@ footer {
     display: block;
     margin: 0 auto;
     color: #fff;
+    margin-top: 30px;
 }
 
 footer ul {
