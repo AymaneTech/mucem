@@ -66,7 +66,10 @@
 .secondary-title {
     color: var(--clr-primary);
     font-size: var(--fs-h2);
+    text-transform: capitalize;
     font-weight: var(--fw-bold);
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* backgrounds */
@@ -94,7 +97,7 @@
     font-size: var(--fs-600);
 }
 
-
+/* 
 section,
 .container {
     --max-width: 1110px;
@@ -102,9 +105,12 @@ section,
 
     width: min(var(--max-width), 100% - (var(--padding) * 2));
     margin-inline: auto;
-}
+} */
 
 /* general styling */
+section{
+    margin: 0 96px;
+}
 body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
@@ -143,6 +149,9 @@ img{
     border-radius: .5rem;
 }
 /* styling header */
+header{
+    margin-bottom: 100px;
+}
 header .navbar {
     display: flex;
     justify-content: space-between;
@@ -156,6 +165,26 @@ header .navbar {
 .logo a strong{
     font-size: var(--fs-800);
 
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 16px;
+}
+.nav-list .nav-links{
+    text-decoration: none;
+    color: #000;
+}
+.nav-list .nav-item:hover, .nav-item .active{
+    color: var(--clr-primary);
+    text-decoration: underline;
+    transition: .5s ease-out;
+
+}
+header .navbar .hamburger-icon {
+    display: none;
 }
 .bar{
     display: block;
@@ -193,21 +222,35 @@ header .navbar .hamburger-icon {
     height: 190px;
 }
 .image {
-    max-width: 100%;
+    width: 50vw;
     padding: 20px;
 }
 .image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
+.hero{
+    display: flex;
+    gap: 50px;
+}
+.content{
+    width: 50vw;
+}
+.about{
+    margin-top: 140px;
+}
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .socials i{
     margin-top: 10px;
     font-size: 24px;
     transform: scale(1.1);
     transition: .5s;
-}
-.answer {
-    display: none;
 }
 footer{
     background-image: url(../img/image3.jpg);
@@ -218,6 +261,30 @@ footer{
 footer ul{
     list-style: none;
 }
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+.question{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.question i{
+    display: flex;
+    justify-content: start;
+    margin-left: 1000px;
+    cursor: pointer;
+}
+.answer {
+    display: none;
+}
+.answer.active{
+    display: block;
+}
 
 
 
@@ -226,7 +293,7 @@ footer ul{
 
 @media screen and (max-width: 767px) {
     header{
-        margin: 8px 0 24px 0;
+        margin: 8px 0 24px;
     }
     header .navbar {
         margin: 0 24px;
@@ -255,8 +322,9 @@ footer ul{
         width: 100%;
         transition: .3s;
     }
-    .nav-item{
-        margin: 16px;
+    .nav-item .nav-links{
+        margin: 26px;
+        color: var(--white);
     }
     .nav-list.active{
         top: 5;
