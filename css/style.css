@@ -10,8 +10,8 @@
     --ff-reem: 'Reem Kufi Fun', sans-serif;
     --ff-primary: 'Be Vietnam Pro', sans-serif;
 
-    --ff-body: var(--ff-primary);
-    --ff-heading: var(--ff-primary);
+    --ff-body: var(--ff-reem);
+    --ff-heading: var(--ff-reem);
 
     --fw-regular: 400;
     --fw-semi-bold: 500;
@@ -51,11 +51,15 @@ html{
         --fs-nav: var(--fs-300);
     }
 }
+html{
+    font-size: 18px;
+}
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--ff-reem);
+    font-family: var(--ff-primary);
+    font-size: 18px;
 
 }
 
@@ -98,6 +102,11 @@ html{
 
 .fs-600 {
     font-size: var(--fs-600);
+}
+.clr-white{
+    color: #fff;
+    display: flex;
+    margin-bottom: 40px;
 }
 
 /* 
@@ -385,6 +394,82 @@ footer {
     color: var(--white);
 }
 
+/* gallery page */
+.activity-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity-item:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.grid-img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.img {
+    overflow: hidden; 
+}
+.img:hover .grid-img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.grid-wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300Px;
+    grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+    grid-row: span 2;
+}
+.grid-wrapper .tall{
+    grid-column: span 2;
+}
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gallery{
+    padding: 150px;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8) ), url(../img/image4.jpg);
+    backdrop-filter: blur(4px);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.gallery-header{
+    margin: 0;
+}
+
+  
+
+
+
+
 @media screen and (max-width: 767px) {
     header {
         margin: 8px 0 24px;
@@ -472,6 +557,13 @@ footer {
     .mobile{
         display: flex;
         justify-content: center;
+    }
+    .activity-item{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        margin: 0 24px;
     }
     }
 

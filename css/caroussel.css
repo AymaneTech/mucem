@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(128, 0, 128);
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: block;
+    list-style: none;
+    width: 80vw;
+    height: 50wh;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+button.prev, button.next {
+    display: flex; font-size: 32px;
+    align-items: center; justify-content: center;
+    color: #FFF; background-color: #333;
+    border-radius: 50%;
+    width: 44px; height: 44px;
+  }
+  button.prev {
+    position: absolute; left: 0; top: 80px;
+  }
+  button.next {
+    position: absolute; right: 0; top: 80px;
+  }
