@@ -47,7 +47,7 @@ html {
     :root {
         --fs-body: var(--fs-500);
         --fs-primary-heading: var(--fs-900);
-        --fs-secondary-heading: var(--fs-8 00);
+        --fs-secondary-heading: var(--fs-800);
 
         --fs-nav: var(--fs-300);
     }
@@ -124,7 +124,7 @@ section,
 
 /* general styling */
 section {
-    margin: 0 96px;
+    margin: 0 8px;
 }
 
 body {
@@ -166,8 +166,10 @@ body {
 }
 
 .card-img {
-    width: 250px;
-    height: 250px;
+    height: 210px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-img img {
@@ -633,6 +635,9 @@ form input:focus::placeholder{
         top: 5;
         left: 0;
         display: block;
+        padding: 40px 0;
+        line-height: 40px;
+        z-index: 1;
     }
 
     section {
@@ -644,7 +649,7 @@ form input:focus::placeholder{
     }
 
     .about {
-        margin-top: 40Px;
+        margin-top: 40px;
     }
 
     .image {
@@ -686,8 +691,20 @@ form input:focus::placeholder{
         display: flex;
         flex-direction: column;
     }
-
-    section {
-       margin:  0 !important;
+    .button {
+        display: flex;
+        align-self: center;
+    }
+    h1{
+        font-size: 1.8rem !important;
+    }
+    .activity-container{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .activity-item:nth-child(2){
+        display: flex;
+        flex-direction: column;
     }
 }
