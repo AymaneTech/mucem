@@ -127,7 +127,7 @@ section {
     margin: 0 8px;
 }
 
-body {
+html, body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
     color: var(--clr-primary-400);
@@ -496,6 +496,7 @@ footer {
 .timing{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
@@ -706,5 +707,12 @@ form input:focus::placeholder{
     .activity-item:nth-child(2){
         display: flex;
         flex-direction: column;
+    }
+    .opening-hours{
+        display: block;
+    }
+    .content-start{
+        display: flex;
+        align-self: center;
     }
 }
