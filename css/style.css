@@ -460,7 +460,7 @@ footer {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 300Px;
+    grid-auto-rows: 300px;
     grid-auto-flow: dense;
 }
 
@@ -491,7 +491,35 @@ footer {
     margin: 0;
 }
 
-/* contact sectionon workshop page */
+.timing{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.time{
+    line-height: 70px;
+}
+.day{
+    font-size: 2rem;
+}
+.hours{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.hours span{
+    font-size: .8rem;
+}
+
+.mt-20{
+    margin-top: 96px;
+}
+.content-start{
+    display: flex;
+    align-self: start;
+}
+
+/* contact section workshop page */
 .contact{
     display: flex;
     justify-content: center;
@@ -621,6 +649,8 @@ form input:focus::placeholder{
 
     .image {
         width: 80vw;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
     }
 
     .faq-container {
@@ -658,6 +688,6 @@ form input:focus::placeholder{
     }
 
     section {
-        margin: 0 24px;
+       margin:  0 !important;
     }
 }
