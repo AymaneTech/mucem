@@ -124,7 +124,7 @@ section,
 
 /* general styling */
 section {
-    margin: 0 8px;
+    margin: 0 38px;
 }
 
 html, body {
@@ -714,5 +714,34 @@ form input:focus::placeholder{
     .content-start{
         display: flex;
         align-self: center;
+    }
+    .gallery{
+        padding: 10px;
+    }
+    .content{
+        width: 100vw;
+    }
+    .other-activity{
+        margin-top: -124px;
+    }
+    .map{
+        width: 90vw;
+    }
+    .map iframe{
+        max-width: 100%;
+    }
+    .form-container{
+        background: transparent;
+        padding: 5px;
+    }
+    .form-container form {
+        width: 100%;
+    }
+    .form-container form input::placeholder{
+        padding-left: 0px;
+        margin: 10px;
+    }
+    .content p{
+        margin-bottom: 16px;
     }
 }
