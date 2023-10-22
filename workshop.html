@@ -142,12 +142,15 @@
             Reserve Your Place
         </h2>
         <div class="form-container">
+            <div class="Message-container">
+                <h3 id="errorMessage"></h3>
+            </div>
             <form action="">
-                <input type="text" placeholder="Your first name" name="first name">
-                <input type="text" placeholder="Your last name" name="last name">
-                <input type="email" placeholder="Your email" name="Email">
-                <input type="phone number" placeholder="Your phone number" name="phone number">
-                <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input id="firstName" type="text" placeholder="Your first name" name="first name">
+                <input id="lastName" type="text" placeholder="Your last name" name="last name">
+                <input id="email" type="email" placeholder="Your email" name="Email">
+                <input id="phone" type="phone number" placeholder="Your phone number" name="phone number">
+                <textarea id="message" name="Message" cols="30" rows="10" placeholder="Message"></textarea>
                 <button class="button submit">Send message</button>
             </form>
         </div>

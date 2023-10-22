@@ -24,8 +24,8 @@
     --fs-700: 1.875rem;
     --fs-800: 2.5rem;
     --fs-900: 3rem;
-    --fs-h1: 2.125rem;
-    --fs-h2: 1.875rem;
+    --fs-h1: 3.5rem;
+    --fs-h2: 3rem;
     --fs-h3: 1.5rem;
     --fs-h4: 1.25rem;
     --fs-h5: 1.125rem;
@@ -53,9 +53,6 @@ html {
     }
 }
 
-html {
-    font-size: 18px;
-}
 
 * {
     margin: 0;
@@ -257,9 +254,13 @@ header .navbar .hamburger-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     border-radius: 8px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.item-card p{
+    margin-top: 10px;
 }
 
 .card-img {
@@ -337,16 +338,22 @@ footer ul {
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid #0C203A;
+    width: 80vw;
+    padding: 24px;
+    color: var(--clr-primary);
 }
 
 .question i {
-    display: flex;
-    justify-content: start;
+ 
     cursor: pointer;
 }
 
 .answer {
     display: none;
+    border-bottom: 3px solid #0C203A;
+    padding: 24px;
+    width: 80vw;
 }
 
 .answer.active {
