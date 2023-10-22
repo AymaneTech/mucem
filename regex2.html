@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=², initial-scale=1.0">
+    <title>input validation</title>
+</head>
+<body>
+    <input type="text" placeholder="name" id="name">
+    <button onclick="check()" id="submit">submit</button>
+
+    <script>
+        function check(){
+            var input = document.getElementById("name").value;
+    
+            if (input = ""){
+                console.log("console is empty");
+            }else{
+                alert (input);  
+          }
+        }
+    </script>
+</body>
+</html>

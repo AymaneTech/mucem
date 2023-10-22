@@ -446,12 +446,6 @@ footer {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-
 .grid-wrapper>div {
     display: flex;
     justify-content: center;
@@ -565,6 +559,7 @@ textarea {
     border-bottom: 1px #7b7979 solid;
     background: transparent;
     padding: 16px;
+    margin-left: 40px;
 }
 .submit{
     display: flex;
@@ -577,7 +572,7 @@ textarea {
 }
 
 form input::placeholder {
-    padding-left: 30px;
+    padding-left: px;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -592,6 +587,24 @@ form input:focus::placeholder{
     position: relative;
     top: -15px;
     transition: .5s ease;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
 }
 
 
@@ -754,7 +767,7 @@ form input:focus::placeholder{
 }
 
 /* regex */
-
+/* 
 #form {
     width: 300px;
     margin: 20vh auto 0 auto;
@@ -774,7 +787,7 @@ form input:focus::placeholder{
     margin-top: 10px;
     width: 100%;
     color: white;
-    background-color: rgb(41, 57, 194);
+    background-color:var(--clr-primary);
     border: none;
     border-radius: 4px;
 }
@@ -809,4 +822,4 @@ form input:focus::placeholder{
     color: #ff3860;
     font-size: 9px;
     height: 13px;
-}
+} */
