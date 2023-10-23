@@ -146,30 +146,35 @@
             <div class="Message-container">
                 <h3 id="errorMessage"></h3>
             </div>
-            <form action="" id="form">
+            <form action="https://formspree.io/f/xwkdyoba" method="POST" id="form">
                 <div class="input-control">
                     <input id="firstName" type="text" placeholder="Your first name" name="first name">
-                    <div class="error"></div>
+                    <div class="error"><p>Please Fill this field</p></div>
                 </div>
                 
                 <div class="input-control">
                     <input id="lastName" type="text" placeholder="Your last name" name="last name">
-                    <div class="error"></div>
+                    <div class="error"><p>Please Fill this field</p></div>
                 </div>
                 
                 <div class="input-control">
                     <input id="email" type="email" placeholder="Your email" name="Email">
-                    <div class="error"></div>
+                    <div class="error"><p>Please Fill this field</p></div>
                 </div>
                 
                 <div class="input-control">
                     <input id="phone" type="phone number" placeholder="Your phone number" name="phone number">
-                    <div class="error"></div>
+                    <div class="error"><p>Please Fill this field</p></div>
+                </div>
+
+                <div class="input-control">
+                    <input id="cin" type="phone" placeholder="Your CIN number" name="cin">
+                    <div class="error"><p>Please Fill this field</p></div>
                 </div>
                 
                 <div class="input-control">
                     <textarea id="message" name="Message" cols="30" rows="10" placeholder="Message"></textarea>
-                    <div class="error"></div>
+                    <div class="error"><p>Please Fill this field</p></div>
                 </div>
                 
                 <button type="submit" class="button submit" onclick="check()">Send message</button>
