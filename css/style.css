@@ -36,7 +36,6 @@
     --fs-nav: var(--fs-500);
     --fs-button: var(--fs-300);
     --bg-gray: #E4E3E0;
-
 }
 
 html {
@@ -76,6 +75,8 @@ html {
     font-weight: var(--fw-bold);
     margin-bottom: 30px;
     margin-top: 30px;
+    border-bottom: 6px solid #D97600;
+    width: fit-content;
 }
 
 /* backgrounds */
@@ -646,6 +647,14 @@ form input:focus::placeholder{
         align-items: center;
         margin-bottom: 40px;
     }   
+    .map{
+        width: 200px;
+        margin-right: 30px;
+    }
+    .timing{
+        display: flex;
+        gap: 30px;
+    }
 }
 
 
